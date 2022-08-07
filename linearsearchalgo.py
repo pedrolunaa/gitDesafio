@@ -4,10 +4,10 @@
 
 
 def search(arr, n, x):
-
-	for i in range(0, n):
-        #Complete the function here
-	return -1
+    for i in range(0, n):
+        if x == arr[i]:
+            return i
+    return -1
 
 
 # Driver Code
@@ -18,6 +18,6 @@ n = len(arr)
 # Function call
 result = search(arr, n, x)
 if(result == -1):
-	print("Element is not present in array")
+    print("Element is not present in array")
 else:
-	print("Element is present at index", result)
+    print("Element is present at index", result)
